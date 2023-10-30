@@ -8,17 +8,17 @@ import Home from './Home';
 
 function App() {
 
-     const [posts, setPosts] = useState([]);
-     const [album, setAlbums] = useState({});
-     
-    //  console.log('posts', posts);
-     useEffect(()=> {
-        fetch("https://jsonplaceholder.typicode.com/albums")
-        .then(res => res.json())
-        .then(data => {
-          setPosts(data);
-        })
-     }, [])
+    const [posts, setPosts] = useState([]);
+    const [album, setAlbums] = useState({});
+    
+  //  console.log('posts', posts);
+    useEffect(()=> {
+      fetch("https://jsonplaceholder.typicode.com/albums")
+      .then(res => res.json())
+      .then(data => {
+        setPosts(data);
+      })
+    }, [])
      
     //  console.log('postx', posts);
     
