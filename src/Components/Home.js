@@ -10,7 +10,6 @@ const Home = (props) =>{
                 {posts.map((post) => (
                     <div className="card m-2" key={post.id} style={{width: "18rem"}}>
                         <div className="card-body list" style={{display: "flex", flexDirection: "column", backgroundColor: "lightpink"}} >
-                            {/* Title  */}
                             <h5 className="card-title">{post.title}</h5>
                             <div className='row'>
                                 <div className='col-7'>

@@ -11,7 +11,6 @@ function App() {
     const [posts, setPosts] = useState([]);
     const [album, setAlbums] = useState({});
     
-  //  console.log('posts', posts);
     useEffect(()=> {
       fetch("https://jsonplaceholder.typicode.com/albums")
       .then(res => res.json())
@@ -20,7 +19,6 @@ function App() {
       })
     }, [])
      
-    //  console.log('postx', posts);
     
     const addAlbumToList = (userId, title) => {
       const length = posts.length;
@@ -65,7 +63,6 @@ function App() {
         id: id,
         title: title
       }
-      // console.log(updatedAlbum);
       posts[index] = updatedAlbum;
     }
 
